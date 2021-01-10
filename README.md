@@ -1,5 +1,5 @@
 # Basic-Banking-App
-This App is demonstrating the transactions between multiple users that I completed this task while working as an intern for [The Sparks Foundation](https://www.thesparksfoundationsingapore.org/)
+This App is demonstrating the transactions between multiple users that I completed while working as an intern for [The Sparks Foundation](https://www.thesparksfoundationsingapore.org/)
 
 IDE Used - Android Studio
 
