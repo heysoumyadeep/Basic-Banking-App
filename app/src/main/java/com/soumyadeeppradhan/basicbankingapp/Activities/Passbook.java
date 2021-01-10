@@ -26,7 +26,7 @@ public class Passbook extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private PassbookRecyclerViewAdapter adapter;
 
-    TextView history_empty;
+    private TextView empty_passbook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class Passbook extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true);
         recyclerView.setLayoutManager(layoutManager);
 
-        history_empty = findViewById(R.id.noTransaction);
+        empty_passbook = findViewById(R.id.noTransaction);
 
         FloatingActionButton fab = findViewById(R.id.fabInfo);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -76,9 +76,7 @@ public class Passbook extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         if(holdersPassbook.size() == 0){
-            history_empty.setVisibility(View.VISIBLE);
+            empty_passbook.setVisibility(View.VISIBLE);
         }
-
     }
-
 }
