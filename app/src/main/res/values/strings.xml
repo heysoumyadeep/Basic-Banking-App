@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Basic Banking App</string>
+    <string name="holder_name">Holder Name</string>
+    <string name="phoneNum">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="account_number">Account Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="bankName">Bank</string>
+    <string name="bank_holder_details_activity">Bank Holder Details</string>
+    <string name="enter_the_amount">Enter the Amount</string>
+    <string name="select_user">SELECT User</string>
+    <string name="add_money_button">Add Money</string>
+    <string name="add_amount">₹1000</string>
+    <string name="about_this_app">About this App</string>
+    <string name="appdetails">This App is developed by Soumyadeep Pradhan and
+        is the task #2, demonstrating the transactions between multiple users.
+        I completed this task while working as an intern for
+         <a href="https://www.thesparksfoundationsingapore.org/">The Sparks Foundation.</a></string>
+    <string name="github">Source Code of this App:
+         <a href="https://github.com/heysoumyadeep/Basic-Banking-App">Github</a></string>
+    <string name="linkedInhandle">My Social Handle:
+         <a href="https://www.linkedin.com/in/soumyadeeppradhan/">LinkedIn</a></string>
+    <string name="no_transactions">No Transactions</string>
+    <string name="developer">Made By Soumyadeep Pradhan</string>
+    <string name="fromuser">fromUser</string>
+    <string name="touser">toUser</string>
+    <string name="dateOfTransaction">dateOfTransaction</string>
+    <string name="transactAmount">amount</string>
+    <string name="tID">TransactionID</string>
+    <string name="passbook_heading">Passbook</string>
+    <string name="bank_holders_heading">Bank Holders</string>
+    <string name="select_a_user">Select a User</string>
+</resources>

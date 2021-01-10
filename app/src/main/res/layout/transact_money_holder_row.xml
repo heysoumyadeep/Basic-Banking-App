@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="50dp"
+    android:elevation="5dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/transactLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/holderImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/holder_image_shape"
+            android:text="A"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/product_sans"/>
+
+        <TextView
+            android:id="@+id/holderNameDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/holderImage"
+            android:layout_centerHorizontal="true"
+            android:text="@string/holder_name"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/my_theme"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/product_sans"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/holderPhoneNumberDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:layout_below="@id/holderNameDet"
+            android:layout_toRightOf="@id/holderImage"
+            android:text="@string/phoneNum"
+            android:fontFamily="@font/product_sans"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"/>
+
+
+        <TextView
+            android:id="@+id/transactBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="Rs. 000"
+            android:textSize="20sp"
+            android:fontFamily="@font/product_sans" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

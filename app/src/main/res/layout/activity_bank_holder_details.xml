@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_theme">
+
+    <TextView
+        android:id="@+id/userDetHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/product_sans"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/bank_holder_details_activity"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activity_background"
+        android:layout_below="@id/userDetHeading"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/holderImageDet"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/holder_image_shape"
+            android:text="A"
+            android:gravity="center"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/holderNameDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#2E2E2E"
+            android:textStyle="bold"
+            android:text="@string/holder_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_toEndOf="@id/holderImageDet"
+            android:layout_toRightOf="@id/holderImageDet"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/product_sans"/>
+
+        <TextView
+            android:id="@+id/holderPhoneNumberDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FF2E2E2E"
+            android:layout_toRightOf="@id/holderImageDet"
+            android:text="@string/phoneNum"
+            android:layout_below="@id/holderNameDet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/product_sans"
+            android:layout_toEndOf="@id/holderImageDet" />
+
+        <TextView
+            android:id="@+id/holderEmailDet"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_below="@id/holderPhoneNumberDet"
+            android:layout_toRightOf="@id/holderImageDet"
+            android:text="@string/email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/product_sans"/>
+
+        <TextView
+            android:id="@+id/AccDetailsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/holderImageDet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/product_sans"
+            android:text="Bank Account Details"
+            android:textColor="#FF2E2E2E"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/accountNumDet"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_below="@id/AccDetailsHeading"
+            android:text="@string/account_number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/product_sans"/>
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountNumDet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/product_sans"
+            android:text="@string/bankName"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ifscCode"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_below="@id/bankName"
+            android:text="@string/ifsc_code"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/product_sans"/>
+
+        <TextView
+            android:id="@+id/transactAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_below="@id/ifscCode"
+            android:text="@string/account_balance"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/product_sans"/>
+
+        <EditText
+            android:id="@+id/enter_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transactAmount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:fontFamily="@font/product_sans"
+            android:hint="@string/enter_the_amount"
+            android:textSize="20sp"
+            android:inputType="number|numberDecimal" />
+
+        <Button
+            android:id="@+id/addMoneyButton"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_money"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toLeftOf="@id/buttonDivider"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_money_button"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/product_sans"
+            android:background="@drawable/button_shape" />
+
+        <Button
+            android:id="@+id/selectUserButton"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_money"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toRightOf="@id/buttonDivider"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/select_user"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/product_sans"
+            android:background="@drawable/button_shape"/>
+
+        <View
+            android:id="@+id/buttonDivider"
+            android:layout_width="1dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"/>
+
+        <View
+            android:id="@+id/detailsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            android:layout_below="@id/holderImageDet"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/AccDetailsHeading"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

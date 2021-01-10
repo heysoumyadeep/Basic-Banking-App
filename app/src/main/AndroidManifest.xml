@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soumyadeeppradhan.basicbankingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bank"
+        android:label="Basic Banking App"
+        android:roundIcon="@drawable/bank"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.BankHolderList"
+            android:label="Bank Holders"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <activity
+            android:name=".Activities.BankHolderDetails"
+            android:label="Bank Holder Details"
+            android:parentActivityName=".Activities.BankHolderList"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <activity
+            android:name=".Activities.TransactMoney"
+            android:label="Transact Money"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <activity
+            android:name=".Activities.Passbook"
+            android:label="Passbook"
+            android:parentActivityName=".Activities.BankHolderList"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".Activities.TransactionSuccessPage"
+            android:label="Transaction Successful"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Activities.BankHolderList">
+        </activity>
+
+        <activity
+            android:name=".Activities.AppInfo"
+            android:label="App Info"
+            android:parentActivityName=".Activities.BankHolderList"
+            android:theme="@style/AppTheme">
+        </activity>
+    </application>
+</manifest>
