@@ -79,8 +79,10 @@
             android:text="@string/email"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/product_sans"/>
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/product_sans"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="20dp" />
 
         <TextView
             android:id="@+id/AccDetailsHeading"

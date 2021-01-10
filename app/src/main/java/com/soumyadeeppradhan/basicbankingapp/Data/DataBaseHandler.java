@@ -43,7 +43,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
                                 "'22XXXXXX2341'," +
                                 "'United Bank of World'," +
                                 "'SOUM0123456'," +
-                                "1000.81)",
+                                "100.81)",
 
                 Elon = "INSERT INTO HOLDERS VALUES(" +
                             "91565486546," +
@@ -115,7 +115,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
                         "'00XXXXXX7777'," +
                         "'Rahul Payments Bank'," +
                         "'MWLD0123456'," +
-                        "10000.56)",
+                        "787.56)",
 
                 Kalyan = "INSERT INTO HOLDERS VALUES(" +
                         "91055465465," +
