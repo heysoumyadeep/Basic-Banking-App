@@ -101,7 +101,7 @@ public class BankHolderDetails extends AppCompatActivity {
                     "Amount Can't be Empty", Toast.LENGTH_LONG, true).show();
         }else if(Double.parseDouble(moneyToTransact.getText().toString()) > accBalance){
             Toasty.warning(BankHolderDetails.this,
-                    "You don't have enough holderBalance to Transact", Toast.LENGTH_LONG, true).show();
+                    "You don't have enough Balance to Transact", Toast.LENGTH_LONG, true).show();
         }else{
             Intent intent = new Intent(BankHolderDetails.this, TransactMoney.class);
             intent.putExtra("holderPhoneNum", holderNumber.getText().toString());
