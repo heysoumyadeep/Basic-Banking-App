@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:textColor="#2E2E2E"
+            android:textColor="@color/cardview_dark_background"
             android:textStyle="bold"
             android:text="@string/holder_name"
             android:layout_marginLeft="20dp"
@@ -56,29 +56,30 @@
             android:id="@+id/holderPhoneNumberDet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#FF2E2E2E"
+            android:textColor="#5C5C5C"
             android:layout_toRightOf="@id/holderImageDet"
             android:text="@string/phoneNum"
             android:layout_below="@id/holderNameDet"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="17dp"
             android:fontFamily="@font/product_sans"
             android:layout_toEndOf="@id/holderImageDet" />
 
         <TextView
             android:id="@+id/holderEmailDet"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="#5C5C5C"
             android:layout_below="@id/holderPhoneNumberDet"
             android:layout_toRightOf="@id/holderImageDet"
             android:text="@string/email"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
             android:fontFamily="@font/product_sans"/>
 
         <TextView
@@ -89,10 +90,10 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/product_sans"
-            android:text="Bank Account Details"
-            android:textColor="#FF2E2E2E"
+            android:text="@string/bank_account_details"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="20sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/accountNumDet"
@@ -100,7 +101,7 @@
             android:layout_height="30dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="#5C5C5C"
             android:layout_below="@id/AccDetailsHeading"
             android:text="@string/account_number"
             android:layout_marginLeft="20dp"
@@ -116,7 +117,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/product_sans"
             android:text="@string/bankName"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="#5C5C5C"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -126,7 +127,7 @@
             android:layout_height="30dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="#5C5C5C"
             android:layout_below="@id/bankName"
             android:text="@string/ifsc_code"
             android:layout_marginLeft="20dp"
@@ -139,7 +140,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="#5C5C5C"
             android:layout_below="@id/ifscCode"
             android:text="@string/account_balance"
             android:layout_marginLeft="20dp"

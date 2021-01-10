@@ -31,4 +31,5 @@
     <string name="passbook_heading">Passbook</string>
     <string name="bank_holders_heading">Bank Holders</string>
     <string name="select_a_user">Select a User</string>
+    <string name="bank_account_details">Bank Account Details</string>
 </resources>
